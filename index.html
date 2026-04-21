@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Training Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- DevOps Tools Decoration - Left Side -->
+    <div class="devops-icons left-icons">
+        <div class="icon-item"><i class="fab fa-docker"></i></div>
+        <div class="icon-item"><i class="fab fa-jenkins"></i></div>
+        <div class="icon-item"><i class="fab fa-git-alt"></i></div>
+        <div class="icon-item"><i class="fab fa-python"></i></div>
+    </div>
+
+    <!-- DevOps Tools Decoration - Right Side -->
+    <div class="devops-icons right-icons">
+        <div class="icon-item"><i class="fab fa-aws"></i></div>
+        <div class="icon-item"><i class="fas fa-dharmachakra"></i></div>
+        <div class="icon-item"><i class="fab fa-github"></i></div>
+        <div class="icon-item"><i class="fab fa-linux"></i></div>
+    </div>
+    <div class="container">
+        <div class="form-header">
+            <!-- Logo Section - Add your logo here -->
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Company Logo" class="logo">
+            </div>
+            <h1>DevOps Training Registration</h1>
+            <p>Join our comprehensive DevOps training program</p>
+        </div>
+
+        <form id="registrationForm" class="registration-form">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Date of Birth (Optional) -->
+            <div class="form-group">
+                <label for="dob">Date of Birth <span class="optional">(Optional)</span></label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <!-- Occupation -->
+            <div class="form-group">
+                <label for="occupation">Occupation <span class="required">*</span></label>
+                <input type="text" id="occupation" name="occupation" required placeholder="e.g., Software Engineer, Student">
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+            </div>
+
+            <!-- Highest Education -->
+            <div class="form-group">
+                <label for="education">Highest Education <span class="required">*</span></label>
+                <select id="education" name="education" required>
+                    <option value="">-- Select your highest education --</option>
+                    <option value="High School">High School</option>
+                    <option value="Associate Degree">Associate Degree</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Doctorate/PhD">Doctorate/PhD</option>
+                    <option value="Professional Certificate">Professional Certificate</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Country -->
+            <div class="form-group">
+                <label for="country">Country <span class="required">*</span></label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select your country --</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- IT Skills Rating -->
+            <div class="form-group">
+                <label for="itSkills">Rate Your IT Skills <span class="required">*</span></label>
+                <div class="rating-container">
+                    <input type="range" id="itSkills" name="itSkills" min="1" max="10" value="5" required>
+                    <div class="rating-labels">
+                        <span>Beginner (1)</span>
+                        <span id="ratingValue">5</span>
+                        <span>Expert (10)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Join -->
+            <div class="form-group">
+                <label for="reason">Why do you want to join this DevOps training? <span class="required">*</span></label>
+                <textarea id="reason" name="reason" rows="5" required placeholder="Tell us why you're interested in this training..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Registration</button>
+
+            <!-- Status Messages -->
+            <div id="statusMessage" class="status-message"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
