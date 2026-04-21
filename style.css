@@ -115,15 +115,15 @@ body {
 }
 
 .pki-content i {
-    font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.2);
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
 }
 
 .pki-content span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
     letter-spacing: 0.5px;
     text-align: center;
     transition: all 0.3s ease;
