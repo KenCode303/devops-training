@@ -1,7 +1,7 @@
 // ===========================
 // Configuration - Replace with YOUR Google Apps Script URL
 // ===========================
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyqtdsFaxol6UBTQ9zKzAKQja0rbtOjUS7FobpCO2waA0f62IYhEjGIW6YG3LOsrrkMJQ/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBkRSmMJXWuGsbeGZe8zIWqHwluGybcONHKOEwPMivLS3oOo-uHKhswzlak2un9cB3/exec';
 
 // ===========================
 // DOM Elements

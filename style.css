@@ -112,30 +112,42 @@ body {
     align-items: center;
     gap: 0.3rem;
     transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .pki-content i {
     font-size: 2.2rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
 }
 
 .pki-content span {
     font-size: 0.8rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     letter-spacing: 0.5px;
     text-align: center;
     transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .pki-logo-badge:hover .pki-content {
-    transform: scale(1.2);
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.4) 0%, rgba(118, 75, 162, 0.4) 100%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 .pki-logo-badge:hover .pki-content i,
 .pki-logo-badge:hover .pki-content span {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
 }
 
 .container {
@@ -418,12 +430,16 @@ input[type="range"]::-moz-range-thumb:hover {
         bottom: 2%;
     }
     
+    .pki-content {
+        padding: 0.6rem 1rem;
+    }
+    
     .pki-content i {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .pki-content span {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         letter-spacing: 0.3px;
     }
 
