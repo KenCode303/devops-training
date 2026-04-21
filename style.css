@@ -41,18 +41,18 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.8rem;
     z-index: 1;
 }
 
 .left-icons {
-    left: 2rem;
+    left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .right-icons {
-    right: 2rem;
+    right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -68,6 +68,8 @@ body {
 .icon-item:nth-child(2) { animation-delay: 1.5s; }
 .icon-item:nth-child(3) { animation-delay: 3s; }
 .icon-item:nth-child(4) { animation-delay: 4.5s; }
+.icon-item:nth-child(5) { animation-delay: 6s; }
+.icon-item:nth-child(6) { animation-delay: 7.5s; }
 
 .icon-item:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -83,6 +85,59 @@ body {
     }
 }
 
+/* ===========================
+   PKI Cloud Consulting Badges
+   =========================== */
+.pki-logo-badge {
+    position: fixed;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
+}
+
+.left-pki {
+    bottom: 3%;
+    left: 1.5rem;
+    animation-delay: 1s;
+}
+
+.right-pki {
+    bottom: 3%;
+    right: 1.5rem;
+    animation-delay: 3s;
+}
+
+.pki-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.pki-content i {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.pki-content span {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pki-logo-badge:hover .pki-content {
+    transform: scale(1.2);
+}
+
+.pki-logo-badge:hover .pki-content i,
+.pki-logo-badge:hover .pki-content span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .container {
     max-width: 700px;
     margin: 0 auto;
@@ -92,6 +147,8 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 10;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* ===========================
@@ -333,9 +390,41 @@ input[type="range"]::-moz-range-thumb:hover {
         padding: 1rem 0.5rem;
     }
 
-    /* Hide DevOps icons on mobile */
+    /* Scale down DevOps icons for mobile - make them visible */
     .devops-icons {
-        display: none;
+        gap: 1.2rem;
+    }
+    
+    .icon-item {
+        font-size: 1.3rem;
+    }
+    
+    .left-icons {
+        left: 0.3rem;
+    }
+    
+    .right-icons {
+        right: 0.3rem;
+    }
+
+    /* Scale down PKI badges on mobile */
+    .left-pki {
+        left: 0.3rem;
+        bottom: 2%;
+    }
+    
+    .right-pki {
+        right: 0.3rem;
+        bottom: 2%;
+    }
+    
+    .pki-content i {
+        font-size: 1rem;
+    }
+    
+    .pki-content span {
+        font-size: 0.5rem;
+        letter-spacing: 0.3px;
     }
 
     .form-header {
